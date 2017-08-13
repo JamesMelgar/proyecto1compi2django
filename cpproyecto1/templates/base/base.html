@@ -1,0 +1,91 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+	{% block extrahead %}
+	{% endblock %}
+
+	<link rel="stylesheet" href="{% static 'css/bootstrap1.css' %}">
+	<meta charset="utf-8" />
+	<title>{% block title %}Proyecto compi2 {% endblock%}</title>
+</head>
+ 
+<body>
+<div class="container">
+
+
+ {% block navbar %}
+  <div class="bs-docs-section clearfix">
+   <div class="row">
+    <div class="col-lg-12">
+     <div class="bs-component">
+      <div class="navbar navbar-default">
+       <div class="container-fluid">
+        <div class="navbar-header">
+         <a div class="navbar-brand" href="#">Home</a>
+        </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mascotas><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+           <li><a href="#">Registrar</a></li>
+           <li><a href="#">Listar</a></li>
+          </ul>
+            </li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Adopciones<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+             <li><a href="#">Solicitar</a></li>
+             <li><a href="#">Listar solicitudes</a></li>
+            </ul>
+             
+         </li>
+             
+         </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="http://codigofacilito.com" onclick="pageTracker._link(this.href); return false;">Codigo Facilito</a>
+        </li>  
+        <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Opciones<span class="coret"></span></a>
+         <ul class="dropdown-menu" role="menu">
+          <li <a href="#">Salir</a></li>
+           
+            </ul>
+           
+           </li>
+         </ul>
+        </div>
+       </div>
+    
+      </div>
+     
+     </div>
+
+    </div>
+      
+   </div>
+     
+  </div>
+  </div>
+
+  </div>﻿
+	{% endblock %}
+
+
+	{% block header %}
+	<h4> Este es el proyecto.</h4>
+	{% endblock %}
+
+	{% block content %}
+	{% endblock %}
+
+	{% block footer %}
+	{% endblock %}
+
+	{% block extrajs %}
+	{% endblock %}
+
+</body>
+</html>
